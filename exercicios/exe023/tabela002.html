@@ -4,22 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgb(198, 205, 212);
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(168, 175, 182);
+        }
+    </style>
 </head>
 <body>
     <h1>uso de tabelas grandes</h1>
     <table>
+        <caption>populacão das unidades federativas</caption>
        <thead>
           <tr>
-            <th>estado</th>
-            <th>populacão</th>
+            <th scope="col">estado</th>
+            <th scope="col">populacão</th>
           </tr>
        </thead>    
-    </table>
     <tbody>
-
+        <tr>
+            <td>São Paulo</td>
+            <td class="num">45 919 049</td>
+        </tr>
+        <tr>
+            <td>Minas Gerais</td>
+            <td class="num">21 168 791</td>
+        </tr>
+        <tr>
+            <td>Rio de Janeiro</td>
+            <td class="num">17 264 943</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>ola</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>mundo</td>
+            <td class="num">00 000 000</td>
+        </tr>
+        <tr>
+            <td>beleza</td>
+            <td class="num">00 000 000</td>
+        </tr>
     </tbody>
     <tfoot>
-
+        <tr>
+            <th scope="row">Total de Habitantes</th>
+            <td class="num">0000</td>
+        </tr>
     </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis praesentium fugit excepturi provident mollitia sed sint ad odio dignissimos eos enim maiores error, ipsa autem voluptatem numquam totam tenetur voluptates? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique, repellendus unde? Quis, minima illum? Alias ut quae beatae molestiae in tempora repudiandae nostrum ipsum, quisquam corporis quos minima, deleniti neque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat fuga optio provident. Temporibus molestiae at inventore veniam, voluptas ut dignissimos laborum earum dolor accusamus rerum hic minus voluptatibus sed quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. A odio accusamus ducimus explicabo architecto nam nisi. Reprehenderit quo reiciendis sequi sit at minus veniam cupiditate iste. Neque aliquam veniam itaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque sapiente pariatur perferendis nulla aliquid ex porro temporibus quisquam est. Maxime, facere sapiente? Harum magnam similique eligendi alias nesciunt vero quam.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima debitis perspiciatis vitae alias mollitia quibusdam sed sit neque officiis suscipit, architecto animi commodi recusandae deleniti sequi non voluptatum tempore illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque velit soluta officia odit est odio vel nisi sit ex nesciunt mollitia ducimus consectetur, ad sequi maiores placeat, nemo atque repellat.</p>
 </body>
 </html>
